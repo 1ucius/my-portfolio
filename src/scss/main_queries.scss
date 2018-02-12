@@ -1,0 +1,142 @@
+@media screen and (max-width: 1366px) and (orientation: portrait) {
+
+    .filter {
+        display: none;
+    }
+
+    .slide {
+        flex-direction: column;
+
+        &__images-column, &__content-column {
+            height: 50vh;
+            width: 100vw;
+        }
+
+        &__images-column {
+
+            .background {
+                width: 100%;
+                background-attachment: initial;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+        }
+
+    }
+
+    .about {
+        flex-flow: column;
+
+        .photo-holder, .info-holder {
+            width: 100vw;
+            height: 50vh;
+        }
+
+        .photo-holder {
+            height: 40vh;
+        }
+
+        .info-holder {
+            height: 60vh;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1023px) and (orientation: landscape), only screen and (min-width: 768px) and (orientation: landscape){
+   
+    .filter {
+        display: block;
+        width: 50vw;
+        height: 100vh;
+    }
+
+    .slide {
+        flex-direction: row;
+
+        &__images-column, &__content-column {
+            height: 100vh;
+            width: 50vw;
+        }
+
+        &__images-column {
+
+            .background {
+                width: 200%;
+                background-attachment: fixed;
+                background-size: 50% auto;
+                background-position-y: center;
+                background-repeat: no-repeat;
+            }
+
+        }
+
+    }
+
+    .about {
+        flex-flow: row;
+
+        .photo-holder, .info-holder {
+            width: 50vw;
+            height: 100vh;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 1023px) {
+
+    .header .logo-holder {
+
+        .shown-on-narrow-screens {
+            display: inline-block;
+        }
+
+        .shown-on-wide-screens {
+            display: none;
+        }
+
+    }
+
+    .slide .description {
+        display: none;
+    }
+
+    .button-godown {
+        display: none;
+    }
+
+    @media only screen and (min-width: 768px) and (min-height: 768px){
+
+        .slide .description {
+            display: block;
+            padding: 0px 10%;
+        }
+
+        .button-godown {
+            display: block;
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .header .logo-holder {
+
+        .shown-on-narrow-screens {
+            display: none;
+        }
+
+        .shown-on-wide-screens {
+            display: inline-block;
+        }
+
+    }
+
+}

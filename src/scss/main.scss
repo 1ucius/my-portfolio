@@ -1,0 +1,23 @@
+@import "reset";
+@import "preloader";
+@import "header";
+@import "slider";
+@import "about";
+
+body {
+    background-color: #262626;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.default-transition {
+    transition: .3s all ease;
+}
+
+.parallax {
+    transition: .26s linear all;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Vadim Orlov | Portfolio
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="css/main_queries.css")
+        link(rel="stylesheet", href="css/styles_max_767.css", id="responsive-styles")
+    body
+        .container
+            include components/header.pug
+            include components/slider.pug
+            include components/about.pug
+        script(src='js/preloader.js')
+        script(src='js/parallax.js')
+        script(src='js/start_setup.js')
+        script(src='js/header.js')
+        script(src='js/animated-heading.js')
+        script(src='js/slider.js')
+        script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")

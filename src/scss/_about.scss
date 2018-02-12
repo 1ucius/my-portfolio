@@ -1,0 +1,111 @@
+.about {
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    pointer-events: all;
+    display: flex;
+    background-color: #222;
+    font-family: 'Segoe', Arial, Helvetica, sans-serif;
+    color: white;
+    left: 100%;
+    opacity: 0;
+    transition: .3s cubic-bezier(.93,.72,.79,.73);
+
+    &_active {
+        left: 0;
+        opacity: 1;
+    }
+
+    .close {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            color: red;
+        }
+
+    }
+
+    .links {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-sizing: border-box;
+        position: relative;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+
+            &:hover .icon-holder {
+                transform: scale(1.2);
+            }
+
+        }
+
+        i {
+            display: block;
+        }
+
+        .icon-holder, p {
+            display: inline-block;
+        }
+
+    }
+
+    .photo-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("../img/pat.png");
+        background-blend-mode: multiply;
+
+        &__photo {
+            border: 2px white solid;
+            border-radius: 50%;
+            background: url('../img/me.jpg') center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+    }
+
+    .info-holder {
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+            span {
+                letter-spacing: -1px;
+            }
+
+            .colored {
+                color: rgb(137, 185, 45);
+            }
+
+        }
+
+        .description {
+            color: white;
+        }
+
+    }
+
+}
